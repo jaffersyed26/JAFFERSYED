@@ -40,33 +40,39 @@
     position: fixed;
     width: 100%;
     display: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 99;
 }
 
 #navbar2.scrolled {
-    background-color: #263238 !important;
+    background-color: white !important;
     transition: background-color 200ms linear;
+    color: #263238;
   }
 
   #navbar2.scrolled .hamburger-icon {
     width: 35px;
     height: 5px;
-    background-color: white;
+    background-color: #263238;
     margin: 6px 0;
 }
 
-#dropup-links {
-    background-color: #263238;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
+.dropdown {
+    background-color: white;
     display: none;
 }
 
-#dropup-links a {
-    color: white;
+.dropdown-link {
+    padding: 20px;
+}
+
+.dropdown-link:hover {
+    background-color: #263238;
+}
+
+.dropdown a{
+    color: #263238;
 }
 
 .navbar-transparent {
@@ -212,3 +218,41 @@
 .submit-btn {
     color: #263238;
 }
+
+.btn-complete {
+    font-family: Roboto;
+    width: 100%;
+}
+
+.btn-complete:hover {
+    background-color: #263238;
+    color: white;
+}
+
+.phone-email {
+    padding: 20px;
+}
+
+.social-media {
+    padding: 20px;
+}
+
+.media {
+    padding: 10px;
+}
+
+#footer {
+    color: white;
+    background-color: #263238;
+    font-family: Roboto;
+}
+
+#footer a{
+    color: white;
+}
+
+#footer a:hover {
+    color: #ECEFF1;
+    text-decoration: none;
+}
+

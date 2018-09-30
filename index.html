@@ -23,31 +23,13 @@
       <div class="col-xs-8 float-right links">
         <center>
           <ul class="list-inline">
-            <li class="list-item"><a href="">HOME</a></li>
-            <li class="list-item"><a href="">ABOUT</a></li>
-            <li class="list-item"><a href="">PROJECTS</a></li>
-            <li class="list-item"><a href="">CONTACT</a></li>
+            <li class="list-item"><a href="#">HOME</a></li>
+            <li class="list-item"><a href="#about">ABOUT</a></li>
+            <li class="list-item"><a href="#project-header">PROJECTS</a></li>
+            <li class="list-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </center>
       </div>
-    </div>
-  </section>
- <section id="dropup-links">
-  <div class="container">
-    <center>
-      <div class="col-xs-3">
-      <a href="">HOME</a>
-      </div>
-      <div class="col-xs-3">
-      <a href="">ABOUT</a>
-      </div>
-      <div class="col-xs-3">
-      <a href="">PROJECTS</a>
-      </div>
-      <div class="col-xs-3">
-      <a href="">CONTACT</a>
-      </div>
-     </center>
     </div>
   </section>
   <section id="navbar2">
@@ -63,10 +45,25 @@
        </button>
       </div>
     </div>
+   <div class="dropdown">
+    <div class="dropdown-link">
+      <a href="#">HOME</a>
+     </div>
+     <div class="dropdown-link">
+      <a href="#about">ABOUT</a>
+     </div>
+     <div class="dropdown-link">
+      <a href="#project-header">PROJECTS</a>
+     </div>
+     <div class="dropdown-link">
+      <a href="#contact">CONTACT</a>
+     </div>
+    </div>
   </section>
   <section id="mainheader">
     <div class="container">
       <h1 class="page-header">JAFFER SYED</h1>
+      <span class="txt-type" data-wait="3000" data-words='["Developer", "Student", "Visionary"]'></span>
     </div>
   </section>
   <section id="about">
@@ -208,6 +205,34 @@
     <div class="container">
       <h1 class="text-center">CONTACT</h1>
       <div class="row">
+        <div class="col-md-4">
+          <div class="statement">
+            <h3>If you need to contact me or you just want to meet me feel free to contact me !</h3>
+            <div class="phone-email">
+              <h4>jaffer.a.syed@gmail.com</h4>
+              <h4>(813)-230-2524</h4>
+            </div>
+            <div class="social-media">
+              <div class="row">
+                <div class="col-xs-4 media">
+                  <i class="fa fa-twitter" style="font-size:48px;color:white"></i>
+                </div>
+                <div class="col-xs-4 media">
+                  <i class="fa fa-facebook" style="font-size:48px;color:white"></i>
+                </div>
+                <div class="col-xs-4 media">
+                  <i class="fa fa-instagram" style="font-size:48px;color:white"></i>
+                </div>
+                <div class="col-xs-4 media">
+                  <i class="fa fa-github" style="font-size:48px;color:white"></i>
+                </div>
+                <div class="col-xs-4 media">
+                  <i class="fa fa-linkedin" style="font-size:48px;color:white"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="col-md-8 contact-form">
           <div class="contact-item">
             <input type="text" id="name" placeholder="type your name here (Spongebob Squarepants)">
@@ -218,11 +243,26 @@
           <div class="contact-item">
             <textarea name="message" id="message " rows="10" placeholder="type your message here."></textarea>
           </div>
+          <div class="submit-btn">
+            <center>
+              <button class="btn btn-complete">SUBMIT</button>
+            </center>
+          </div>
         </div>
       </div>
-      <div class="submit-btn">
-        <button class="btn btn-light">SUBMIT</button>
-      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="container">
+      <h2 class="text-center">JAFFER SYED</h2>
+       <center>
+          <ul class="list-inline">
+            <li class="list-item"><a href="index.html">HOME</a></li>
+            <li class="list-item"><a href="#about">ABOUT</a></li>
+            <li class="list-item"><a href="#project.html">PROJECTS</a></li>
+            <li class="list-item"><a href="#contact">CONTACT</a></li>
+          </ul>
+        </center>
     </div>
   </section>
   <script src="index.js"></script>

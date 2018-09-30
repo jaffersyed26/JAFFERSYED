@@ -1,5 +1,5 @@
 document.querySelector('#nav-btn-mobile').addEventListener('click', function(){
-   var navMobile = document.querySelector('#dropup-links');
+   var navMobile = document.querySelector('.dropdown');
       
    if (navMobile.style.display === 'none') {
       navMobile.style.display = 'block'
@@ -22,4 +22,6 @@ $(function () {
         $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
       });
   });
+
+  
 
