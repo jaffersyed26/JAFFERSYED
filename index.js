@@ -25,39 +25,65 @@ $(function () {
 
   function triumph() {
       var showModal = document.querySelector('#modal');
-      var showModalContents = document.querySelector('.triumph-info');
-
+      var TriumphModalContents = document.querySelector('.triumph-info');
+      var calculateModalContents = document.querySelector('.calculate-info');
+      var iswafModalContents = document.querySelector('.iswaf-info');
+      var xpressModalContents = document.querySelector('.xpress-info');
       showModal.style.display = 'block';
-      showModalContents.style.display = 'block';
+      TriumphModalContents.style.display = 'block';
+      calculateModalContents.style.display = 'none';
+      iswafModalContents.style.display = 'none';
+      xpressModalContents.style.display = 'none';
   }
 
   function calculate() {
     var showModal = document.querySelector('#modal');
-    var showModalContents = document.querySelector('.calculate-info');
-
+    var TriumphModalContents = document.querySelector('.triumph-info');
+    var calculateModalContents = document.querySelector('.calculate-info');
+    var iswafModalContents = document.querySelector('.iswaf-info');
+    var xpressModalContents = document.querySelector('.xpress-info');
     showModal.style.display = 'block';
-    showModalContents.style.display = 'block';
+    TriumphModalContents.style.display = 'none';
+    calculateModalContents.style.display = 'block';
+    iswafModalContents.style.display = 'none';
+    xpressModalContents.style.display = 'none';
 }
 
 function iswaf() {
-    var showModal = document.querySelector('#modal');
-    var showModalContents = document.querySelector('.iswaf-info');
-
-    showModal.style.display = 'block';
-    showModalContents.style.display = 'block';
+      var showModal = document.querySelector('#modal');
+      var TriumphModalContents = document.querySelector('.triumph-info');
+      var calculateModalContents = document.querySelector('.calculate-info');
+      var iswafModalContents = document.querySelector('.iswaf-info');
+      var xpressModalContents = document.querySelector('.xpress-info');
+      showModal.style.display = 'block';
+      TriumphModalContents.style.display = 'none';
+      calculateModalContents.style.display = 'none';
+      iswafModalContents.style.display = 'block';
+      xpressModalContents.style.display = 'none';
 }
 
 function xpress() {
     var showModal = document.querySelector('#modal');
-    var showModalContents = document.querySelector('.xpress-info');
-
+    var TriumphModalContents = document.querySelector('.triumph-info');
+    var calculateModalContents = document.querySelector('.calculate-info');
+    var iswafModalContents = document.querySelector('.iswaf-info');
+    var xpressModalContents = document.querySelector('.xpress-info');
     showModal.style.display = 'block';
-    showModalContents.style.display = 'block';
+    TriumphModalContents.style.display = 'none';
+    calculateModalContents.style.display = 'none';
+    iswafModalContents.style.display = 'none';
+    xpressModalContents.style.display = 'block';
 }
 
-function close() {
-    var modal = document.getElementById('#modal');
-    modal.style.display = 'none';
+
+function closeTitle() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
 }
 
 
