@@ -1,334 +1,235 @@
 #navbar {
-    background: transparent;
-    font-family: Roboto;
+    font-family: "Montserrat";
+    padding-top: 10px;
+    padding-bottom: 10px;
     position: fixed;
     width: 100%;
     color: white;
-    display: block;
+    background: transparent;
     z-index: 99;
+}
+
+#navbar h5 {
+    letter-spacing: 8px;
+}
+
+#navbar a{
+    color: white;
+}
+
+#navbar a:hover {
+    color: #CFD8DC;
+    text-decoration: none;
 }
 
 #navbar.scrolled {
     background-color: white !important;
+    color: #263238;
     transition: background-color 200ms linear;
   }
 
-  #navbar.scrolled h4 {
+  #navbar.scrolled  a {
     color:#263238;
   }
 
-  #navbar.scrolled .links a {
-    color:#263238;
+  #navbar.scrolled a:hover {
+      color: #455A64;
   }
-
-.links a {
-    color: white;
-}
-
-.links a:hover {
-    color: #ECEFF1;
-    text-decoration: none;
-}
-
-.links {
-    padding: 12px;
-}
-
-#navbar2 {
-    font-family: Roboto;
-    color: white;
-    position: fixed;
-    width: 100%;
-    display: none;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    z-index: 99;
-}
-
-#navbar2.scrolled {
-    background-color: white !important;
-    transition: background-color 200ms linear;
-    color: #263238;
-  }
-
-  #navbar2.scrolled .hamburger-icon {
-    width: 35px;
-    height: 5px;
-    background-color: #263238;
-    margin: 6px 0;
-}
-
-.dropdown {
-    background-color: white;
-    display: none;
-}
-
-.dropdown-link {
-    padding: 20px;
-}
-
-.dropdown-link:hover {
-    background-color: #263238;
-}
-
-.dropdown a{
-    color: #263238;
-}
-
-.navbar-transparent {
-    background: transparent;
-}
-
-.span {
-    padding: 20px;
-}
-
-.hamburger {
-    padding: 10px;
-}
-
-.hamburger-icon {
-    width: 35px;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0;
-}
-
-@media only screen and (max-width: 600px) {
-    #navbar2 {
-        display: block;
-    }
-    #navbar {
-        display: none;
-    }
-}
-
 
 #mainheader {
     padding-top: 250px;
-    padding-bottom: 250px;
+    padding-bottom: 350px;
+    font-family: "Montserrat";
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/mainheader.png');
     background-attachment: fixed;
     background-size:     cover;                  
     background-repeat:   no-repeat;
-    background-position: center center;            
+    background-position: center center;  
+    color: white;  
 }
 
 #mainheader h1 {
-    font-size: 55px;
-    font-family: Roboto;
-    color: white;
-}
-
-#modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1; 
-    padding-top: 100px; 
-    padding-bottom: 100px;
-    left: 0;
-    top: 0;
-    width: 100%; 
-    height: 100%; 
-    overflow: auto; 
-    background-color: rgb(0,0,0); 
-    background-color: rgba(0,0,0,0.4); 
-}
-
-.triumph-info {
-    display: none;
-}
-
-.calculate-info {
-    display: none;
-}
-
-.iswaf-info {
-    display: none;
-}
-
-.xpress-info {
-    display: none;
-}
-
-
-.modal-contents {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    font-family: Roboto;
-    color: #263238;
-}
-
-.modal-image img{
-    width: 100%;
-}
-
-.official-site h4:hover{
-   color: #455A64;
-}
-
-.close-btn h4:hover {
-    color: #455A64;
-}
-
-.modal-description {
-    padding: 20px;
+    animation-duration: 6s;
 }
 
 #about {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: Roboto;
-    color: #263238;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    font-family: "Montserrat";
+    background-color: #ECEFF1;
 }
 
-#about h1{
-    font-weight: bolder;
-    font-size: 60px;
-}
-
-.about-details {
-    padding: 20px;
-}
-
-.about-container a {
-    color: #263238;
-}
-
-.about-container a:hover {
-    color: #455A64;
+#about a:hover {
     text-decoration: none;
 }
 
-#project-header {
+#business-admin {
+    font-family: "Montserrat";
     padding-top: 50px;
     padding-bottom: 50px;
-    color: white;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/tech.jpeg');
-    background-attachment: fixed;
-    background-size:     cover;                  
-    background-repeat:   no-repeat;
-    background-position: center center;    
+    background-color: #263238;
+    color: #ECEFF1;
 }
 
-#project-header h1{
-    font-weight: bolder;
-    font-size: 60px;
-    font-family: Roboto;
+.header-b {
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
-#projects {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-family: Roboto;
-    background-color:white;
+.header {
+    letter-spacing: 8px;
 }
 
-.project {
-    padding: 10px;
+.header2 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    letter-spacing: 8px;
+}
+
+.button {
+    padding-top: 40px;
+}
+
+.button-learn {
+    background-color: #ECEFF1;
+    color: #263238;
+    width: 30%;
+    padding: 20px;
+}
+
+.button-learn:hover {
+    background-color: #455A64;
+}
+
+#programming {
+    color: #263238;
+    font-family: "Montserrat";
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.projects {
+    padding-top: 50px;
 }
 
 .project-container {
-    background-color: #F5F5F5;
-    padding: 10px;
-    box-shadow: 10px 10px 5px grey;
+    padding: 50px;
+    border-style: solid;
+    font-family: "Montserrat";
+    border-color: #263238;
+    border-radius: 25px;
+}
+
+.project-container h4 {
+    letter-spacing: 6px;
 }
 
 .project-container:hover {
+    color: #ECEFF1;
     background-color: #263238;
-    color: white;
 }
 
-.project-image img {
+.project{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.image {
+    padding: 20px;
+}
+
+
+.project-header {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.para {
+    padding: 20px;
+}
+
+.image img{
     width: 100%;
 }
 
-.project-description {
-    padding-top: 20px;
-    padding-bottom: 20px;
+#research {
+    font-family: "Montserrat";
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #78909C;
+    color: white;
 }
 
-.project-button:hover {
-    background-color: white;
-    color: #263238;
+.research-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.research-para {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding: 23px;
 }
 
 #contact {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: white;
-    font-family: Roboto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-family: "Montserrat";
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/contact.jpeg');
     background-attachment: fixed;
     background-size:     cover;                  
     background-repeat:   no-repeat;
-    background-position: center center;    
+    background-position: center center;  
+    color: white;  
 }
 
-#contact h1 {
-    font-size: 60px;
+.contact-container {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.contact-form input{
+.contact-input {
     padding: 20px;
+    font-family: "Montserrat";
+    color: #263238;
     width: 100%;
-    color: #263238;
-    font-family: Roboto;
-    font-size: 20px;
+    font-size: 25px;
 }
 
-.contact-form textarea {
-    width:100%;
-    color: #263238;
+.contact-container textarea {
+    height: 50%;
+    width: 100%;
     padding: 20px;
-    font-size: 30px;
-}
-
-.contact-item {
-    padding: 10px;
+    font-family: "Montserrat";
+    color: #263238;
+    font-size: 25px;
 }
 
 .submit-btn {
+    background-color: white;
+    color: #263238;
+    width: 80%;
+    padding: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #CFD8DC;
     color: #263238;
 }
 
-.btn-complete {
-    font-family: Roboto;
-    width: 100%;
-}
-
-.btn-complete:hover {
-    background-color: #263238;
-    color: white;
-}
-
-.phone-email {
-    padding: 20px;
-}
-
-.social-media {
-    padding: 20px;
-}
-
-.media {
-    padding: 10px;
-}
-
 #footer {
-    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "Montserrat";
     background-color: #263238;
-    font-family: Roboto;
+    color: white;
 }
 
-#footer a{
+#footer a {
     color: white;
 }
 
 #footer a:hover {
-    color: #ECEFF1;
+    color: #CFD8DC;
     text-decoration: none;
 }
-

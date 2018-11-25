@@ -1,14 +1,3 @@
-document.querySelector('#nav-btn-mobile').addEventListener('click', function(){
-   var navMobile = document.querySelector('.dropdown');
-      
-   if (navMobile.style.display === 'none') {
-      navMobile.style.display = 'block'
-   } else {
-       navMobile.style.display = 'none'
-   }
-
-})
-
 $(function () {
     $(document).scroll(function () {
         var $nav = $("#navbar");
@@ -16,76 +5,31 @@ $(function () {
       });
   });
 
-  $(function () {
-    $(document).scroll(function () {
-        var $nav = $("#navbar2");
-        $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
-      });
-  });
 
-  function triumph() {
-      var showModal = document.querySelector('#modal');
-      var TriumphModalContents = document.querySelector('.triumph-info');
-      var calculateModalContents = document.querySelector('.calculate-info');
-      var iswafModalContents = document.querySelector('.iswaf-info');
-      var xpressModalContents = document.querySelector('.xpress-info');
-      showModal.style.display = 'block';
-      TriumphModalContents.style.display = 'block';
-      calculateModalContents.style.display = 'none';
-      iswafModalContents.style.display = 'none';
-      xpressModalContents.style.display = 'none';
-  }
+var tot = document.getElementById('tot');
+var iswaf = document.getElementById('iswaf');
+var xpress = document.getElementById('xpress');
+var novacore = document.getElementById('novacore');
 
-  function calculate() {
-    var showModal = document.querySelector('#modal');
-    var TriumphModalContents = document.querySelector('.triumph-info');
-    var calculateModalContents = document.querySelector('.calculate-info');
-    var iswafModalContents = document.querySelector('.iswaf-info');
-    var xpressModalContents = document.querySelector('.xpress-info');
-    showModal.style.display = 'block';
-    TriumphModalContents.style.display = 'none';
-    calculateModalContents.style.display = 'block';
-    iswafModalContents.style.display = 'none';
-    xpressModalContents.style.display = 'none';
+
+function totDirect() {
+    window.location = 'https://www.triumphovertrafficking.com/';
 }
 
-function iswaf() {
-      var showModal = document.querySelector('#modal');
-      var TriumphModalContents = document.querySelector('.triumph-info');
-      var calculateModalContents = document.querySelector('.calculate-info');
-      var iswafModalContents = document.querySelector('.iswaf-info');
-      var xpressModalContents = document.querySelector('.xpress-info');
-      showModal.style.display = 'block';
-      TriumphModalContents.style.display = 'none';
-      calculateModalContents.style.display = 'none';
-      iswafModalContents.style.display = 'block';
-      xpressModalContents.style.display = 'none';
+function iswafDirect(){
+    window.location = 'https://jaffersyed26.github.io/ISWAF/';
 }
 
-function xpress() {
-    var showModal = document.querySelector('#modal');
-    var TriumphModalContents = document.querySelector('.triumph-info');
-    var calculateModalContents = document.querySelector('.calculate-info');
-    var iswafModalContents = document.querySelector('.iswaf-info');
-    var xpressModalContents = document.querySelector('.xpress-info');
-    showModal.style.display = 'block';
-    TriumphModalContents.style.display = 'none';
-    calculateModalContents.style.display = 'none';
-    iswafModalContents.style.display = 'none';
-    xpressModalContents.style.display = 'block';
+function xpressDirect() {
+    window.location = 'https://www.xpresspizzaandsubs.com/';
 }
 
-
-function closeTitle() {
-    modal.style.display = "none";
+function novacoreDirect() {
+    window.location = 'https://novacoreinc.github.io/NovaCoreInc/';
 }
 
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-
-
-  
+tot.addEventListener('click', totDirect);
+iswaf.addEventListener('click' , iswafDirect);
+xpress.addEventListener('click', xpressDirect);
+novacore.addEventListener('click', novacoreDirect);
 
