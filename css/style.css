@@ -7,7 +7,7 @@
     color: white;
     background: transparent;
     z-index: 99;
-    display: none;
+    display: block;
 }
 
 #navbar h5 {
@@ -72,20 +72,48 @@
       position: fixed;
       width: 100%;
       z-index: 99;
-      display: block;
+      display: none;
   }
 
   .drop-btn {
       background: transparent;
   }
 
-  .span {
+  .span-header {
       padding-top: 5px;
       padding-bottom: 5px;
   }
 
-  .span h5 {
+  .span-header h5 {
       letter-spacing: 7px;
+  }
+
+  .dropdown {
+      padding-top: 70px;
+      display: none;
+  }
+
+  .dropdown-link {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding: 20px;
+      width: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    #navbar-dropdown {
+        display: block;
+    }
+    #navbar {
+        display: none;
+    }
+}
+
+
+
+  .dropdown-link:hover {
+      background-color: #263238;
+      color: white;
   }
 
   .bar1, .bar2, .bar3 {
@@ -95,43 +123,6 @@
     margin: 6px 0;
     transition: 0.4s;
     background-color: white;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-    transform: rotate(-45deg) translate(-9px, 6px);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
-}
-
-#dropdown-menu {
-    font-family: "Montserrat";
-    position: fixed;
-    background-color: white;
-    width: 100%;
-    display: none;
-    z-index: 99;
-}
-
-.menu1 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding: 20px;
-
-}
-
-.menu1:hover {
-    background-color: #263238;
-    color: white;
-}
-
-.menu {
-    padding-top: 90px;
 }
 
 #mainheader {
