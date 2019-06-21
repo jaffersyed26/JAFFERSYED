@@ -380,3 +380,22 @@
     color: #CFD8DC;
     text-decoration: none;
 }
+
+.BTN {
+    background-color: #455A64;
+    color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.BTN:hover {
+    background-color: #78909C;
+}
+
+#resume {
+    font-family: "Montserrat";
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
